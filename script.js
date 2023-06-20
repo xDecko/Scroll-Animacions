@@ -43,18 +43,11 @@ function handleHover() {
 
 
 
-function iconHover() {
-    var icons = document.getElementsByClassName("icons");
-    var circles = document.getElementsByClassName("circle-icon");
 
-    for (var i = 0; i < icons.length; i++) {
-        icons[i].classList.toggle("icon-animation");
-    }
 
-    for (var j = 0; j < circles.length; j++) {
-        circles[j].classList.toggle("icon-rotate");
-    }
-}
+    
+
+
 
 
 
