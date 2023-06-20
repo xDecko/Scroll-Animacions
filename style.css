@@ -109,19 +109,51 @@ p{
     opacity: 1;
 }
 
-#icono{
-
-    width: 300px;
-    height: 300px;
-    filter:;
-    transition: filter 0.3s ease-in-out;
-  }
-  
-  #icono:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-    filter: blur(0.1rem);
-
-  }
 
 
+
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+}
+.circle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    border: 0.4rem solid rgb(255, 255, 255);
+    border-radius: 6.5rem;
+    color: white;
+    transition: all 0.6s ease-in-out;
+}
+
+.circle-icon:hover {
+    border-radius: 50%;
+    border: 0.4rem dotted rgb(255, 255, 255);
+    animation: rotateCircle 40s infinite linear;
+}
+
+
+@keyframes rotateCircle {
+    to {
+        transform: rotate(1turn); /* Realiza una vuelta completa */
+    }
+}
+
+.icons {
+    position: absolute;
+    width: 8rem;
+    filter: invert();
+    height: 8rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.icons.icon-animation{
+    transform: scale(1.2);
+
+}
